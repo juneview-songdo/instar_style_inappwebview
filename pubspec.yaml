@@ -1,0 +1,47 @@
+name: instar_style_inappwebview
+description: "Description here"
+#publish_to: 'none'
+#repository: https://github.com/melodysdreamj/juneflow
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  after_layout:
+  bot_toast:
+  device_preview:
+  flutter:
+    sdk: flutter
+  flutter_inappwebview:
+  flutter_screenutil:
+  flutter_svg:
+  flutter_zoom_drawer:
+  gap:
+  go_router:
+  june:
+  june_flow_util:
+  keyboard_attachable:
+  linkpeek:
+  modal_bottom_sheet:
+  styled_widget:
+
+
+dev_dependencies:
+  basic_inappwebview_page:
+  bot_toast_module:
+  device_preview_module:
+  flutter_lints:
+  flutter_lints_module:
+  flutter_test:
+    sdk: flutter
+  june_view:  #@add
+  june_view_more:  #@add
+  linkpeek_module:
+  screenutil_module:
+
+flutter:
+  assets:
+    - assets/view/instar_style_inappwebview/
+  uses-material-design: true
