@@ -35,30 +35,7 @@ class NewViewState extends State<NewView> with StateMother {
     super.initState();
   }
 
-  String siteTitle = "";
 
-  @override
-  Function? readyState(BuildContext context) {
-    return () async {
-      LinkPeekModel? linkPeekModel = await LinkPeek.fromUrl(
-        widget.url,
-      );
-
-      siteTitle = linkPeekModel.title ?? "";
-    };
-  }
-
-  @override
-  Widget loadingWidget() {
-    return SafeArea(
-        child: Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
-      appBar: AppbarView(
-        title: "",
-        url: "",
-      ),
-    ));
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -67,7 +44,6 @@ class NewViewState extends State<NewView> with StateMother {
       child: Scaffold(
         backgroundColor: Theme.of(context).colorScheme.background,
         appBar: AppbarView(
-          title: siteTitle,
           url: widget.url,
         ),
         body: Column(
