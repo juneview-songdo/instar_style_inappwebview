@@ -1,7 +1,7 @@
 name: instar_style_inappwebview
-description: "Description here"
+description: "Instar Style Inappwebview"
 #publish_to: 'none'
-#repository: https://github.com/melodysdreamj/juneflow
+repository: https://github.com/juneview-songdo/instar_style_inappwebview
 
 version: 1.0.0+1
 
